@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "o9OaVuvJWBnFQNd2RYl9yxD88Oqw9GmeLVgcT3VqaayN3pYx6VCOgMNUOkm+LwwqZkEDHO2/bPHFC9++pNwRTw==",
+  "success": true,
+  "projectFilePath": "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/diogo/.nuget/packages/fluentvalidation/9.5.1/fluentvalidation.9.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
