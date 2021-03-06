@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/diogo/dev/Manager/src/Manger.Core/Manger.Core.csproj": {}
+    "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj": {}
   },
   "projects": {
-    "/home/diogo/dev/Manager/src/Manger.Core/Manger.Core.csproj": {
+    "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/diogo/dev/Manager/src/Manger.Core/Manger.Core.csproj",
-        "projectName": "Manger.Core",
-        "projectPath": "/home/diogo/dev/Manager/src/Manger.Core/Manger.Core.csproj",
+        "projectUniqueName": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj",
+        "projectName": "Manager.Core",
+        "projectPath": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj",
         "packagesPath": "/home/diogo/.nuget/packages/",
-        "outputPath": "/home/diogo/dev/Manager/src/Manger.Core/obj/",
+        "outputPath": "/home/diogo/dev/Manager/src/Manager.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/diogo/.nuget/NuGet/NuGet.Config"
