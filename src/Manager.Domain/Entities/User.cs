@@ -1,60 +1,59 @@
 using System.Collections.Generic;
-using System;
+using Manager.Domain.Validators;
+using Manager.Core.Exceptions;
 
-namespace Manager.Domain.Entities
+namespace Manager.Domain.Entities{
+    public class User : Base {
 
-{
-    
-    public class User: Base{
+        //Propriedades
         public string Name { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
-        //justo for Entity Framework
+
+        //EF
         protected User(){}
 
         public User(string name, string email, string password)
         {
             Name = name;
             Email = email;
-            Password = password; 
+            Password = password;
             _errors = new List<string>();
+
+            Validate();
         }
 
-        //a entidade está fechada, você só consnegue alterar 
-        //através do construtor
 
-
+        //Comportamentos
         public void ChangeName(string name){
             Name = name;
             Validate();
         }
 
-        public void ChangePasssword(string passowrd){
-            Password = passowrd;
+        public void ChangePassword(string password){
+            Password = password;
             Validate();
         }
 
-        public void ChangeEmail(string email)
-        {
+        public void ChangeEmail(string email){
             Email = email;
             Validate();
         }
 
+        //Autovalida
         public override bool Validate()
         {
             var validator = new UserValidator();
             var validation = validator.Validate(this);
 
-
-            if(!validation.IsValid)
-            {
-                foreach (var error in validation.Errors)
+            if(!validation.IsValid){
+                foreach(var error in validation.Errors)
                     _errors.Add(error.ErrorMessage);
-                throw new Exception("Alguns campos estão inválidos, por favor, corrijá-os!", _errors[0]);
-                
-            }
-        }
 
-        
+                throw new DomainException("Alguns campos estão inválidos, por favor corrija-os!", _errors);
+            }
+
+            return true;
+        }
     }
 }

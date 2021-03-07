@@ -1,0 +1,11 @@
+/home/diogo/dev/Manager/src/Manager.Core/bin/Debug/net5.0/Manager.Core.deps.json
+/home/diogo/dev/Manager/src/Manager.Core/bin/Debug/net5.0/Manager.Core.dll
+/home/diogo/dev/Manager/src/Manager.Core/bin/Debug/net5.0/ref/Manager.Core.dll
+/home/diogo/dev/Manager/src/Manager.Core/bin/Debug/net5.0/Manager.Core.pdb
+/home/diogo/dev/Manager/src/Manager.Core/obj/Debug/net5.0/Manager.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/diogo/dev/Manager/src/Manager.Core/obj/Debug/net5.0/Manager.Core.AssemblyInfoInputs.cache
+/home/diogo/dev/Manager/src/Manager.Core/obj/Debug/net5.0/Manager.Core.AssemblyInfo.cs
+/home/diogo/dev/Manager/src/Manager.Core/obj/Debug/net5.0/Manager.Core.csproj.CoreCompileInputs.cache
+/home/diogo/dev/Manager/src/Manager.Core/obj/Debug/net5.0/Manager.Core.dll
+/home/diogo/dev/Manager/src/Manager.Core/obj/Debug/net5.0/ref/Manager.Core.dll
+/home/diogo/dev/Manager/src/Manager.Core/obj/Debug/net5.0/Manager.Core.pdb
