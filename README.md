@@ -10,4 +10,4 @@ Repository dedicated to record codes about Manger Users Project, about Lucas Esc
 
 ### References
 
-[1] [Reference 1 ] <https://jpdeffo.medium.com/domain-driven-design-ddd-in-microservice-architecture-for-nutshell-19c7c579009a>
+[1] [ Domain-Driven Design ] <https://jpdeffo.medium.com/domain-driven-design-ddd-in-microservice-architecture-for-nutshell-19c7c579009a>
