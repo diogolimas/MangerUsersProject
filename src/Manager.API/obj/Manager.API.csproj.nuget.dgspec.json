@@ -25,7 +25,20 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj": {
+                "projectPath": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj"
+              },
+              "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj": {
+                "projectPath": "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj"
+              },
+              "/home/diogo/dev/Manager/src/Manager.Infra/Manager.Infra.csproj": {
+                "projectPath": "/home/diogo/dev/Manager/src/Manager.Infra/Manager.Infra.csproj"
+              },
+              "/home/diogo/dev/Manager/src/Manager.Services/Manager.Services.csproj": {
+                "projectPath": "/home/diogo/dev/Manager/src/Manager.Services/Manager.Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -41,6 +54,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "automapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
             }
           },
           "imports": [
@@ -61,7 +78,264 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/5.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/116/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj",
+        "projectName": "Manager.Core",
+        "projectPath": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj",
+        "packagesPath": "/home/diogo/.nuget/packages/",
+        "outputPath": "/home/diogo/dev/Manager/src/Manager.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/diogo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/116/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj",
+        "projectName": "Manager.Domain",
+        "projectPath": "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj",
+        "packagesPath": "/home/diogo/.nuget/packages/",
+        "outputPath": "/home/diogo/dev/Manager/src/Manager.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/diogo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj": {
+                "projectPath": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "fluentvalidation": {
+              "target": "Package",
+              "version": "[9.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/116/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/diogo/dev/Manager/src/Manager.Infra/Manager.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/diogo/dev/Manager/src/Manager.Infra/Manager.Infra.csproj",
+        "projectName": "Manager.Infra",
+        "projectPath": "/home/diogo/dev/Manager/src/Manager.Infra/Manager.Infra.csproj",
+        "packagesPath": "/home/diogo/.nuget/packages/",
+        "outputPath": "/home/diogo/dev/Manager/src/Manager.Infra/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/diogo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj": {
+                "projectPath": "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/116/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/diogo/dev/Manager/src/Manager.Services/Manager.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/diogo/dev/Manager/src/Manager.Services/Manager.Services.csproj",
+        "projectName": "Manager.Services",
+        "projectPath": "/home/diogo/dev/Manager/src/Manager.Services/Manager.Services.csproj",
+        "packagesPath": "/home/diogo/.nuget/packages/",
+        "outputPath": "/home/diogo/dev/Manager/src/Manager.Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/diogo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj": {
+                "projectPath": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj"
+              },
+              "/home/diogo/dev/Manager/src/Manager.Infra/Manager.Infra.csproj": {
+                "projectPath": "/home/diogo/dev/Manager/src/Manager.Infra/Manager.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "automapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/116/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
