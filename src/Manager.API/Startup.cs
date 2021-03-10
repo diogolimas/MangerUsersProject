@@ -20,7 +20,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 ///using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-
+//using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Manager.API
 {
@@ -37,23 +38,41 @@ namespace Manager.API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+        
+             services.AddControllers().AddNewtonsoftJson(options =>
+                
+                   options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                );
+
+                    services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder =>
+                    builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+
+                        );
+            });
+
 
             #region AutoMapper 
 
-               var autoMapperConfig = new MapperConfiguration(cfg =>
+            var autoMapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<User, UserDTO>().ReverseMap();
                 cfg.CreateMap<CreateUserViewModel, UserDTO>().ReverseMap();
+                cfg.CreateMap<UpdateUserViewModel, UserDTO>().ReverseMap();
             });
 
+            services.AddSingleton(autoMapperConfig.CreateMapper());
+            
 
             #endregion
 
 
             #region DI
 
-            
             services.AddSingleton(d => Configuration);
             services.AddDbContext<ManagerContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:USER_MANAGER"]), ServiceLifetime.Transient);
             services.AddScoped<IUserService, UserService>();
@@ -70,6 +89,8 @@ namespace Manager.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+          
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -82,6 +103,9 @@ namespace Manager.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors("CorsPolicy");
+
 
             app.UseEndpoints(endpoints =>
             {
