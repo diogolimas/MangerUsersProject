@@ -13,10 +13,10 @@ namespace Manager.Infra.Context{
         public virtual DbSet<User> Users { get; set; }
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsnuilder)
+     /*    protected override void OnConfiguring(DbContextOptionsBuilder optionsnuilder)
         {
             optionsnuilder.UseSqlServer(@"Server=localhost;Database=ManagerUserAPI;User Id=SA;Password=Sql@server;");
-        }
+        } */
 
             protected override void OnModelCreating(ModelBuilder builder)
         {

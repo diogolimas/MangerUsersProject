@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q+uWyJsK41dJQL0lt6yBv2NvnZI+3mvDqcD5hQFeDIx2Yt6Pw7YS/xXE8N6ZTEvK2OckJs16oGD680Q2211J1g==",
+  "dgSpecHash": "WBruPCuNU7PeQQa+ajp/WyKDheylkngDxDBDBMlSmJcciD8phqiEUBa7lHX2L6rPWbbvxMneC6nMtJUpgdA6qA==",
   "success": true,
   "projectFilePath": "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj",
   "expectedPackageFiles": [

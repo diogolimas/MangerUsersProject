@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ycq5nYlnxZIUBOp9KpMbece5Q7jJ8HWTFk430xkO8Al1JYV9zTX7L4RSYKremqdQSEukm6Z9L5qwMHNCWHrARw==",
+  "dgSpecHash": "WrxcRO3Ne10AknV27jslp5aHmj6t0crHHDDvCkA01b0ksaFGFKRIFNSvuLbV7a+Gdv4uMNfPRoTKhFEu63qPJw==",
   "success": true,
   "projectFilePath": "/home/diogo/dev/Manager/src/Manager.Infra/Manager.Infra.csproj",
   "expectedPackageFiles": [
