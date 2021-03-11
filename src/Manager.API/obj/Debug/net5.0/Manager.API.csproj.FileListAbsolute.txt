@@ -1,10 +1,3 @@
-/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.csprojAssemblyReference.cache
-/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.GeneratedMSBuildEditorConfig.editorconfig
-/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.AssemblyInfoInputs.cache
-/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.AssemblyInfo.cs
-/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.csproj.CoreCompileInputs.cache
-/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.MvcApplicationPartsAssemblyInfo.cs
-/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.MvcApplicationPartsAssemblyInfo.cache
 /home/diogo/dev/Manager/src/Manager.API/bin/Debug/net5.0/appsettings.Development.json
 /home/diogo/dev/Manager/src/Manager.API/bin/Debug/net5.0/appsettings.json
 /home/diogo/dev/Manager/src/Manager.API/bin/Debug/net5.0/Manager.API
@@ -63,6 +56,13 @@
 /home/diogo/dev/Manager/src/Manager.API/bin/Debug/net5.0/Manager.Services.pdb
 /home/diogo/dev/Manager/src/Manager.API/bin/Debug/net5.0/Manager.Infra.pdb
 /home/diogo/dev/Manager/src/Manager.API/bin/Debug/net5.0/Manager.Core.pdb
+/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.csprojAssemblyReference.cache
+/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.GeneratedMSBuildEditorConfig.editorconfig
+/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.AssemblyInfoInputs.cache
+/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.AssemblyInfo.cs
+/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.csproj.CoreCompileInputs.cache
+/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.MvcApplicationPartsAssemblyInfo.cs
+/home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/Manager.API.MvcApplicationPartsAssemblyInfo.cache
 /home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/staticwebassets/Manager.API.StaticWebAssets.Manifest.cache
 /home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/staticwebassets/Manager.API.StaticWebAssets.xml
 /home/diogo/dev/Manager/src/Manager.API/obj/Debug/net5.0/scopedcss/bundle/Manager.API.styles.css
