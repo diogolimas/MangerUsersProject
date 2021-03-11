@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v5.0": {
+    "net5.0": {
       "FluentValidation/9.5.1": {
         "type": "package",
         "compile": {
@@ -13,7 +13,7 @@
       },
       "Manager.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
           "bin/placeholder/Manager.Core.dll": {}
         },
@@ -25,7 +25,7 @@
   },
   "libraries": {
     "FluentValidation/9.5.1": {
-      "sha512": "FxFgfW3QXurQnUDjPNaLASrPyNYyqEKg6FXn9DK65l8LHe0IevcC5A7FbTEXdAcfUVKC3LmYgWrz+5w6VgjihQ==",
+      "sha512": "By09e2m4N3giD7Giq8NCFgkgN5Hkm8Lv/bk8AadD9Xc6jjj2WDGrD6l9keZbWbkO9aygiHQREIt47iS2sVSU7w==",
       "type": "package",
       "path": "fluentvalidation/9.5.1",
       "files": [
@@ -49,7 +49,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v5.0": [
+    "net5.0": [
       "Manager.Core >= 1.0.0",
       "fluentvalidation >= 9.5.1"
     ]
@@ -67,16 +67,17 @@
       "outputPath": "/home/diogo/dev/Manager/src/Manager.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/diogo/.config/NuGet/NuGet.Config"
+        "/home/diogo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net50"
+        "net5.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net50": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
             "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj": {
               "projectPath": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj"
@@ -91,13 +92,30 @@
       }
     },
     "frameworks": {
-      "net50": {
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "fluentvalidation": {
             "target": "Package",
             "version": "[9.5.1, )"
           }
-        }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/116/sdk/5.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }
