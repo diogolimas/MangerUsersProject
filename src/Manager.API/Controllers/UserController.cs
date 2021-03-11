@@ -8,7 +8,7 @@ using Manager.Services.Interfaces;
 using AutoMapper;
 using Manager.Services.DTO;
 using Manager.API.Utilities;
-//using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace Manager.API.Controllers
@@ -59,7 +59,7 @@ namespace Manager.API.Controllers
         }
 
         [HttpPut]
-        //[Authorize]
+        [Authorize]
         [Route("/api/v1/users/update")]
         public async Task<IActionResult> Update([FromBody] UpdateUserViewModel userViewModel)
         {
@@ -93,7 +93,7 @@ namespace Manager.API.Controllers
 
 
         [HttpDelete]
-        //[Authorize]
+        [Authorize]
         [Route("/api/v1/users/remove/{id}")]
         public async Task<IActionResult> Remove(long id)
         {
@@ -119,7 +119,7 @@ namespace Manager.API.Controllers
         }
 
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         [Route("/api/v1/users/get/{id}")]
         public async Task<IActionResult> Get(long id)
         {
@@ -154,7 +154,7 @@ namespace Manager.API.Controllers
 
 
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         [Route("/api/v1/users/get-all")]
         public async Task<IActionResult> Get()
         {
@@ -181,7 +181,7 @@ namespace Manager.API.Controllers
 
 
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         [Route("/api/v1/users/get-by-email")]
         public async Task<IActionResult> GetByEmail([FromQuery] string email)
         {
@@ -216,7 +216,7 @@ namespace Manager.API.Controllers
         }
 
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         [Route("/api/v1/users/search-by-name")]
         public async Task<IActionResult> SearchByName([FromQuery] string name)
         {
@@ -251,7 +251,7 @@ namespace Manager.API.Controllers
 
 
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         [Route("/api/v1/users/search-by-email")]
         public async Task<IActionResult> SearchByEmail([FromQuery] string email)
         {

@@ -11,16 +11,16 @@ using Manager.Infra.Repositories;
 using Manager.Services.DTO;
 using Manager.Services.Interfaces;
 using Manager.Services.Services;
-//using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-///using Microsoft.IdentityModel.Tokens;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-//using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Manager.API
@@ -54,6 +54,29 @@ namespace Manager.API
 
                         );
             });
+            #region jwt
+
+             var secretKey = Configuration["Jwt:Key"];
+
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey)),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+
+            #endregion
 
 
             #region AutoMapper 
@@ -77,6 +100,7 @@ namespace Manager.API
             services.AddDbContext<ManagerContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:USER_MANAGER"]), ServiceLifetime.Transient);
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITokenGenerator, UserRepository>();
 
             #endregion
          
@@ -103,6 +127,7 @@ namespace Manager.API
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseCors("CorsPolicy");
 
