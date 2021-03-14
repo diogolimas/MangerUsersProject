@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WrxcRO3Ne10AknV27jslp5aHmj6t0crHHDDvCkA01b0ksaFGFKRIFNSvuLbV7a+Gdv4uMNfPRoTKhFEu63qPJw==",
+  "dgSpecHash": "fgl8tR3IJSF/Fyq7J95t0w26pjbIws1hH7un3uK6Htmg25xsnG/VBVZyZHeyQ2pv/0BaQ+e9hfzMIz5031qt7w==",
   "success": true,
-  "projectFilePath": "/home/diogo/dev/Manager/src/Manager.Infra/Manager.Infra.csproj",
+  "projectFilePath": "/home/diogo/dev/dotnet_projects_tests/MangerUsersProject/src/Manager.Infra/Manager.Infra.csproj",
   "expectedPackageFiles": [
     "/home/diogo/.nuget/packages/fluentvalidation/9.5.1/fluentvalidation.9.5.1.nupkg.sha512",
     "/home/diogo/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",

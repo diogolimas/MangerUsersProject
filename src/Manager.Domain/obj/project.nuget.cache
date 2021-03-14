@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WBruPCuNU7PeQQa+ajp/WyKDheylkngDxDBDBMlSmJcciD8phqiEUBa7lHX2L6rPWbbvxMneC6nMtJUpgdA6qA==",
+  "dgSpecHash": "afk+QysrDoZoA6I0+VPJ2CpjUWraUfI5Uwvn/BNgJvGYyFApxU5aA3yPkbebHVGNQHbTRtlk5syFwhJpUgbuqQ==",
   "success": true,
-  "projectFilePath": "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj",
+  "projectFilePath": "/home/diogo/dev/dotnet_projects_tests/MangerUsersProject/src/Manager.Domain/Manager.Domain.csproj",
   "expectedPackageFiles": [
     "/home/diogo/.nuget/packages/fluentvalidation/9.5.1/fluentvalidation.9.5.1.nupkg.sha512"
   ],

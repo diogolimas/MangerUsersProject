@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jiz6Fx/7qY/0PiD3hZXOiPCz3zZ01DKQ1UP3+/iE6gIJahtL1fomd+LJzBXVOrwthMv8xvLgf3aM4ROjgxxtzw==",
+  "dgSpecHash": "KsuyxV1WT7V0R6jetL5VoPJRO0FUdFzViaNbwfS32Vz0nACMAhhsXkfrv+Cc3jq7Tr5GmnoNyeDxjgvMaexedg==",
   "success": true,
-  "projectFilePath": "/home/diogo/dev/Manager/src/Manager.API/Manager.API.csproj",
+  "projectFilePath": "/home/diogo/dev/dotnet_projects_tests/MangerUsersProject/src/Manager.API/Manager.API.csproj",
   "expectedPackageFiles": [
     "/home/diogo/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/home/diogo/.nuget/packages/fluentvalidation/9.5.1/fluentvalidation.9.5.1.nupkg.sha512",

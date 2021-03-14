@@ -39,25 +39,11 @@ namespace Manager.API
         {
 
         
-             services.AddControllers().AddNewtonsoftJson(options =>
-                
-                   options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-                );
+         services.AddControllers();
 
-                    services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy",
-                    builder =>
-                    builder.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader()
-
-                        );
-            });
-
-            #region jwt
-
-             var secretKey = Configuration["Jwt:Key"];
+            #region Jwt
+            
+            var secretKey = Configuration["Jwt:Key"];
 
             services.AddAuthentication(x =>
             {
@@ -79,9 +65,8 @@ namespace Manager.API
 
             #endregion
 
-
-            #region AutoMapper 
-
+            #region AutoMapper
+            
             var autoMapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<User, UserDTO>().ReverseMap();
@@ -91,9 +76,7 @@ namespace Manager.API
 
             services.AddSingleton(autoMapperConfig.CreateMapper());
             
-
             #endregion
-
 
             #region DI
 
@@ -104,8 +87,8 @@ namespace Manager.API
             services.AddScoped<ITokenGenerator, TokenGenerator>();
 
             #endregion
-          	
-			#region Swagger
+
+            #region Swagger
 
             services.AddSwaggerGen(c =>
             {
@@ -145,6 +128,12 @@ namespace Manager.API
             });
 
             #endregion
+
+            #region Cryptography
+
+        //    services.AddRijndaelCryptography(Configuration["Cryptography"]);
+
+            #endregion
          
         }
 
@@ -152,7 +141,6 @@ namespace Manager.API
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
-          
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -164,11 +152,9 @@ namespace Manager.API
 
             app.UseRouting();
 
-            app.UseAuthorization();
             app.UseAuthentication();
-
-            app.UseCors("CorsPolicy");
-
+            
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

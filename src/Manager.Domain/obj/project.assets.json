@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj",
+      "projectUniqueName": "/home/diogo/dev/dotnet_projects_tests/MangerUsersProject/src/Manager.Domain/Manager.Domain.csproj",
       "projectName": "Manager.Domain",
-      "projectPath": "/home/diogo/dev/Manager/src/Manager.Domain/Manager.Domain.csproj",
+      "projectPath": "/home/diogo/dev/dotnet_projects_tests/MangerUsersProject/src/Manager.Domain/Manager.Domain.csproj",
       "packagesPath": "/home/diogo/.nuget/packages/",
-      "outputPath": "/home/diogo/dev/Manager/src/Manager.Domain/obj/",
+      "outputPath": "/home/diogo/dev/dotnet_projects_tests/MangerUsersProject/src/Manager.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/diogo/.nuget/NuGet/NuGet.Config"
@@ -79,8 +79,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj": {
-              "projectPath": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj"
+            "/home/diogo/dev/dotnet_projects_tests/MangerUsersProject/src/Manager.Core/Manager.Core.csproj": {
+              "projectPath": "/home/diogo/dev/dotnet_projects_tests/MangerUsersProject/src/Manager.Core/Manager.Core.csproj"
             }
           }
         }

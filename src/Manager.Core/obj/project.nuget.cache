@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fclCdp8AxLo1Qt4mBmA7XvhN/7iFwPC4IfGoe7E7cKbRaWwc+3VnyUpkhwzNDKnJARGDTwHGSRe6Mcu9lZJJ5g==",
+  "dgSpecHash": "ivid1hJxh+pb6rAzv2znySPC/WLsgB3nsKAvDQL8yp0J8lkKBgjlHNRAmkX/VmbF8xgxVhSEv/LclFaraBjWXw==",
   "success": true,
-  "projectFilePath": "/home/diogo/dev/Manager/src/Manager.Core/Manager.Core.csproj",
+  "projectFilePath": "/home/diogo/dev/dotnet_projects_tests/MangerUsersProject/src/Manager.Core/Manager.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
